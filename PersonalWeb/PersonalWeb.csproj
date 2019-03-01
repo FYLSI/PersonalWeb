@@ -96,6 +96,17 @@
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="Content\CSS\component.css" />
+    <Content Include="Content\CSS\demo.css" />
+    <Content Include="Content\CSS\login.css" />
+    <Content Include="Content\CSS\normalize.css" />
+    <Content Include="Content\Images\demo-1-bg.jpg" />
+    <Content Include="Content\Images\login_ico.png" />
+    <Content Include="Content\JavaScript\demo-1.js" />
+    <Content Include="Content\JavaScript\EasePack.min.js" />
+    <Content Include="Content\JavaScript\html5.js" />
+    <Content Include="Content\JavaScript\rAF.js" />
+    <Content Include="Content\JavaScript\TweenLite.min.js" />
     <Content Include="Content\jquery-3.2.1\jquery-3.2.1.js" />
     <Content Include="Content\jquery-3.2.1\jquery-3.2.1.min.js" />
     <Content Include="Content\jquery-3.2.1\www.jq22.com.txt" />
@@ -209,7 +220,7 @@
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
     <Compile Include="Controllers\HomeController.cs" />
-    <Compile Include="Controllers\LoginController.cs" />
+    <Compile Include="Controllers\Login\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
@@ -246,10 +257,14 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
-    <Folder Include="Content\CSS\" />
-    <Folder Include="Content\JavaScript\" />
     <Folder Include="Models\" />
     <Folder Include="Views\Home\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\BLL\BLL.csproj">
+      <Project>{b1534ac8-efcd-4c0f-b109-28a6e05004ee}</Project>
+      <Name>BLL</Name>
+    </ProjectReference>
   </ItemGroup>
   <PropertyGroup>
     <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>

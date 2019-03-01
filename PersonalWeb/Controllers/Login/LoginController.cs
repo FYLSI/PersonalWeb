@@ -13,5 +13,10 @@ namespace PersonalWeb.Controllers
         {
             return View();
         }
+
+        public ActionResult LoginAcction()
+        {
+            return null;
+        }
     }
 }

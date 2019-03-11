@@ -16,7 +16,9 @@ namespace PersonalWeb.Controllers
 
         public ActionResult LoginAcction()
         {
-            return null;
+            string name = Request["Name"].ToString();
+
+            return Json(new { Message = name });
         }
     }
 }

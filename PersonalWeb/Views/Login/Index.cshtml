@@ -12,7 +12,8 @@
     <link href="~/Content/CSS/component.css" rel="stylesheet" />
     <link href="~/Content/CSS/demo.css" rel="stylesheet" />
     <link href="~/Content/CSS/normalize.css" rel="stylesheet" />
-   
+    <script src="~/Content/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/JavaScript/common.js"></script>
     <!--[if IE]>
      <script src="~/Content/JavaScript/html5.js"></script>
     <![endif]-->
@@ -33,8 +34,8 @@
                             <span class="us_uer"></span>
                             <input name="logpass" class="text" style="color: #FFFFFF !important; position:absolute; z-index:100;" value="" type="password" placeholder="请输入密码">
                         </div>
-                        <div class="mb2"><a class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
-                    </form>
+                        <div class="mb2"><a id="login" class="act-but submit" href="javascript:;" style="color: #FFFFFF">登录</a></div>
+                    </form> 
                 </div>
             </div>
         </div>
@@ -43,5 +44,14 @@
     <script src="~/Content/JavaScript/EasePack.min.js"></script>
     <script src="~/Content/JavaScript/rAF.js"></script>
     <script src="~/Content/JavaScript/demo-1.js"></script>
+    <script>
+        $("#login").click(function () {
+            PostAjax("LoginAcction", { "Name": "lyf" }, function (data) {
+                alert(data.Message);
+            })
+        })
+       
+
+    </script>
 </body>
 </html>

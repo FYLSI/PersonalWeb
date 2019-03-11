@@ -102,6 +102,7 @@
     <Content Include="Content\CSS\normalize.css" />
     <Content Include="Content\Images\demo-1-bg.jpg" />
     <Content Include="Content\Images\login_ico.png" />
+    <Content Include="Content\JavaScript\common.js" />
     <Content Include="Content\JavaScript\demo-1.js" />
     <Content Include="Content\JavaScript\EasePack.min.js" />
     <Content Include="Content\JavaScript\html5.js" />

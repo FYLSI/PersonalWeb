@@ -1,0 +1,19 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <!--自己的-->
+    <link href="~/Content/CSS/base.css" rel="stylesheet" />
+
+    <script src="~/Content/jquery-3.2.1/jquery-3.2.1.min.js"></script>
+
+    @RenderSection("Head", false)
+
+</head>
+<body>
+    @Html.Partial("~/Views/Shared/_PartialHead.cshtml")
+    @RenderBody()
+</body>
+</html>

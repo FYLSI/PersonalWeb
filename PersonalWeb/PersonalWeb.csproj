@@ -96,21 +96,50 @@
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\bootstrap.min.js" />
     <Content Include="Content\bootstrap-3.3.7-dist\js\npm.js" />
+    <Content Include="Content\CSS\Article\detail.css" />
+    <Content Include="Content\CSS\Article\list.css" />
+    <Content Include="Content\CSS\base.css" />
+    <Content Include="Content\CSS\Home\Main\button.min.css" />
+    <Content Include="Content\CSS\Home\Main\rightContainer\calendar.css" />
     <Content Include="Content\CSS\component.css" />
     <Content Include="Content\CSS\demo.css" />
+    <Content Include="Content\CSS\Home\Main\banner.css" />
+    <Content Include="Content\CSS\Home\Main\foot.css" />
+    <Content Include="Content\CSS\Home\Index\colorbox.css" />
+    <Content Include="Content\CSS\Home\Index\index.css" />
+    <Content Include="Content\CSS\Home\Index\responsive.css" />
+    <Content Include="Content\CSS\Home\Index\screen.css" />
+    <Content Include="Content\CSS\Home\Main\main.css" />
+    <Content Include="Content\CSS\Home\Main\nav.css" />
+    <Content Include="Content\CSS\Home\Main\rightContainer\rightContainer.css" />
     <Content Include="Content\CSS\login.css" />
     <Content Include="Content\CSS\normalize.css" />
+    <Content Include="Content\Images\Home\Index\border.png" />
+    <Content Include="Content\Images\Home\Index\controls.png" />
+    <Content Include="Content\Images\Home\Index\loading.gif" />
+    <Content Include="Content\Images\Home\Index\loading_background.png" />
+    <Content Include="Content\Images\Home\Index\overlay.png" />
+    <Content Include="Content\Images\Home\Index\timeline_century_tick.gif" />
+    <Content Include="Content\Images\Home\Index\timeline_decade_tick.gif" />
+    <Content Include="Content\JavaScript\Home\rightContainer\calendar.js" />
+    <Content Include="Content\JavaScript\Home\Index\colorbox.js" />
+    <Content Include="Content\JavaScript\Home\Index\timeliner.min.js" />
+    <Content Include="Content\Font\fontawesome\font-awesome.min.css" />
+    <Content Include="Content\Font\fontawesome\fonts\fontawesome-webfont.svg" />
+    <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.svg" />
+    <Content Include="Content\Font\pe-icon\pe-icon.css" />
     <Content Include="Content\Images\demo-1-bg.jpg" />
     <Content Include="Content\Images\login_ico.png" />
     <Content Include="Content\JavaScript\common.js" />
     <Content Include="Content\JavaScript\demo-1.js" />
     <Content Include="Content\JavaScript\EasePack.min.js" />
+    <Content Include="Content\JavaScript\Home\headerCanvas.js" />
     <Content Include="Content\JavaScript\html5.js" />
+    <Content Include="Content\JavaScript\Home\particles.min.js" />
     <Content Include="Content\JavaScript\rAF.js" />
     <Content Include="Content\JavaScript\TweenLite.min.js" />
     <Content Include="Content\jquery-3.2.1\jquery-3.2.1.js" />
     <Content Include="Content\jquery-3.2.1\jquery-3.2.1.min.js" />
-    <Content Include="Content\jquery-3.2.1\www.jq22.com.txt" />
     <Content Include="Content\layui-v2.4.5\layui\css\layui.css" />
     <Content Include="Content\layui-v2.4.5\layui\css\layui.mobile.css" />
     <Content Include="Content\layui-v2.4.5\layui\css\modules\code.css" />
@@ -220,7 +249,8 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="App_Start\RouteConfig.cs" />
-    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\Article\ArticleController.cs" />
+    <Compile Include="Controllers\Home\HomeController.cs" />
     <Compile Include="Controllers\Login\LoginController.cs" />
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
@@ -229,7 +259,6 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="Views\web.config" />
-    <Content Include="Content\jquery-3.2.1\jquery插件库.url" />
     <Content Include="Content\layui-v2.4.5\layui\font\iconfont.eot" />
     <Content Include="Content\layui-v2.4.5\layui\font\iconfont.ttf" />
     <Content Include="Content\layui-v2.4.5\layui\font\iconfont.woff" />
@@ -246,9 +275,23 @@
     <Content Include="Content\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.ttf" />
     <Content Include="Content\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff" />
     <Content Include="Content\bootstrap-3.3.7-dist\fonts\glyphicons-halflings-regular.woff2" />
+    <Content Include="Content\Font\fontawesome\fonts\fontawesome-webfont.eot" />
+    <Content Include="Content\Font\fontawesome\fonts\fontawesome-webfont.ttf" />
+    <Content Include="Content\Font\fontawesome\fonts\fontawesome-webfont.woff" />
+    <Content Include="Content\Font\fontawesome\fonts\fontawesome-webfont.woff2" />
+    <Content Include="Content\Font\fontawesome\fonts\FontAwesome.otf" />
+    <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.eot" />
+    <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.ttf" />
+    <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.woff" />
     <None Include="packages.config" />
-    <Content Include="Views\_Layout.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />
+    <Content Include="Views\Shared\_PartialHead.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Home\RightContainer.cshtml" />
+    <Content Include="Views\Home\Main.cshtml" />
+    <Content Include="Views\Article\List.cshtml" />
+    <Content Include="Views\Article\Detail.cshtml" />
     <None Include="Web.Debug.config">
       <DependentUpon>Web.config</DependentUpon>
     </None>
@@ -259,7 +302,6 @@
   <ItemGroup>
     <Folder Include="App_Data\" />
     <Folder Include="Models\" />
-    <Folder Include="Views\Home\" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\BLL\BLL.csproj">

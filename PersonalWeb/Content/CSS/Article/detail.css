@@ -1,0 +1,30 @@
+﻿.detail {
+    float: left;
+    width: 65% !important;
+}
+.content{
+    border:1px solid #ffffff;
+    padding:20px;
+    border-radius:5px;
+}
+.content-foot{
+    /*margin-top:10px;*/
+}
+.info{
+    margin:10px 0;
+}
+.info img {
+    width: 40px;
+    height: 40px;
+    vertical-align: middle
+}
+.info span {
+    padding-left:10px;
+    vertical-align: middle
+}
+.page{
+    margin:10px 0;
+}
+.page a{
+    display:block
+}

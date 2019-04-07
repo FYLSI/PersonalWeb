@@ -1,0 +1,65 @@
+﻿
+@{
+    ViewBag.Title = "Main";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Head{
+    <!--自己的-->
+    <link href="~/Content/CSS/Home/Main/banner.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Home/Main/foot.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Home/Main/main.css" rel="stylesheet" />
+    <link href="~/Content/CSS/Home/Main/nav.css" rel="stylesheet" />
+
+    <!--导航条的-->
+    <link href="~/Content/CSS/Home/Main/button.min.css" rel="stylesheet" />
+
+
+    @RenderSection("Head", false)
+}
+
+@*banner预留区*@
+    <div class="banner">
+        <div id="header-canvas" style="width: 100%;height: 100%"></div>
+        <script src="~/Content/JavaScript/Home/particles.min.js"></script>
+        <script src="~/Content/JavaScript/Home/headerCanvas.js"></script>
+    </div>
+@*导航条预留区*@
+<div class="nav">
+    <div class="nav-main">
+        <!--start button, nothing above this is necessary -->
+        <div class="svg-wrapper">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                    <a href=""><span class="spot"></span>Button 1</a>
+                </div>
+            </svg>
+        </div>
+        <!--Next button -->
+        <div class="svg-wrapper">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                    <a href=""><span class="spot"></span>Button 2</a>
+                </div>
+            </svg>
+        </div>
+        <!--Next button -->
+        <div class="svg-wrapper">
+            <svg height="40" width="150" xmlns="http://www.w3.org/2000/svg">
+                <rect id="shape" height="40" width="150" />
+                <div id="text">
+                    <a href=""><span class="spot"></span>Button 3</a>
+                </div>
+            </svg>
+        </div>
+        <!--End button -->
+    </div>
+</div>
+@*主体预留区*@
+<div class="main">
+    @RenderBody()
+    @Html.Partial("~/Views/Home/RightContainer.cshtml")
+</div>
+@*页脚预留区*@
+<div class="foot"></div>

@@ -21,7 +21,7 @@
                         </p>
                     </div>
                     <div class="article-list-foot">
-                        <span style="float:left"><a href="#">阅读全文</a></span>
+                        <span style="float:left"><a href="/Article/Detail">阅读全文</a></span>
                         <span style="float:right">posted @@<span>2019-04-06</span><span>风雨流逝</span>阅读<span>100</span>评论<span>10</span></span>
                     </div>
                 </div>
@@ -61,6 +61,17 @@
         </ul>
     </div>
     <div class="article-page">
-
+        <div id="pageContent"></div>
     </div>
 </div>
+<script>
+    laypage.render({
+        elem: 'pageContent'
+    , count: 100
+    , layout: ['count', 'prev', 'page', 'next', 'limit']
+        ,groups:3
+    , jump: function (obj) {
+        console.log(obj)
+    }
+    });
+</script>

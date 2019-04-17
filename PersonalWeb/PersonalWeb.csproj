@@ -1,4 +1,5 @@
-﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <Import Project="..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('..\packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.0\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
   <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
   <PropertyGroup>
@@ -99,6 +100,7 @@
     <Content Include="Content\CSS\Article\detail.css" />
     <Content Include="Content\CSS\Article\list.css" />
     <Content Include="Content\CSS\base.css" />
+    <Content Include="Content\CSS\black.css" />
     <Content Include="Content\CSS\Home\Main\button.min.css" />
     <Content Include="Content\CSS\Home\Main\rightContainer\calendar.css" />
     <Content Include="Content\CSS\component.css" />
@@ -244,6 +246,8 @@
     <Content Include="Content\layui-v2.4.5\layui\lay\modules\tree.js" />
     <Content Include="Content\layui-v2.4.5\layui\lay\modules\upload.js" />
     <Content Include="Content\layui-v2.4.5\layui\lay\modules\util.js" />
+    <Content Include="Content\wangEditor-3.1.1\wangEditor.min.css" />
+    <Content Include="Content\wangEditor-3.1.1\wangEditor.min.js" />
     <Content Include="Global.asax" />
     <Content Include="Web.config" />
   </ItemGroup>
@@ -283,6 +287,7 @@
     <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.eot" />
     <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.ttf" />
     <Content Include="Content\Font\pe-icon\fonts\Pe-icon-7-stroke.woff" />
+    <Content Include="Content\wangEditor-3.1.1\wangEditor.min.js.map" />
     <None Include="packages.config" />
     <Content Include="Views\Shared\_Layout.cshtml" />
     <Content Include="Views\Login\Index.cshtml" />

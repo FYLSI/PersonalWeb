@@ -6,6 +6,8 @@
 @section Head{
     <!--自己的-->
     <link href="~/Content/CSS/Article/detail.css" rel="stylesheet" />
+    @*<link href="~/Content/wangEditor-3.1.1/wangEditor.min.css" rel="stylesheet" />*@
+    <script src="~/Content/wangEditor-3.1.1/wangEditor.min.js"></script>
 }
 <div class="detail">
     <div class="content">
@@ -101,11 +103,11 @@
             <div>发表评论：</div>
             <div>昵称：<span>风雨流逝</span></div>
             <div>评论内容：</div>
-            <textarea id="demo" style="display: none;"></textarea>
+            <div id="eidtor"></div>
             <div><button class="layui-btn">提交评论</button></div>
         </div>
         <div class="comment-list">
-            <div>评论列表</div>
+            <div class="comment-h2">评论列表</div>
             <div class="clearfloat">
                 <ul>
                     <li>
@@ -151,5 +153,29 @@
 
 </div>
 <script>
-    layedit.build('demo'); //建立编辑器
+    var E = window.wangEditor;
+    var editor = new E('#eidtor');
+    editor.customConfig.menus = [
+        'head',  // 标题
+        'bold',  // 粗体
+        'fontSize',  // 字号
+        'fontName',  // 字体
+        'italic',  // 斜体
+        'underline',  // 下划线
+        'strikeThrough',  // 删除线
+        'foreColor',  // 文字颜色
+        'backColor',  // 背景颜色
+        'link',  // 插入链接
+        'list',  // 列表
+        'justify',  // 对齐方式
+        'quote',  // 引用
+        'emoticon',  // 表情
+        'image',  // 插入图片
+        //'table',  // 表格
+        //'video',  // 插入视频
+        'code',  // 插入代码
+        'undo',  // 撤销
+        'redo'  // 重复
+    ]
+    editor.create()
 </script>

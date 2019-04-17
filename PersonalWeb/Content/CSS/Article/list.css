@@ -4,7 +4,7 @@
 }
 
 .article li {
-    background-color:white;
+    background-color:var(--bgcolor);
     padding:20px;
     border-radius:5px;
     margin-bottom:20px;
@@ -20,4 +20,7 @@
 
 .article-list-foot span{
     padding-right:5px
+}
+#pageContent{
+    text-align: center;
 }

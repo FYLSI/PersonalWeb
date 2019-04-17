@@ -28,6 +28,12 @@
 .page a{
     display:block
 }
+#eidtor>div{
+    background-color:var(--bgcolor) !important;
+}
+#eidtor>.w-e-toolbar .w-e-menu:hover i{
+    color:#fff !important
+}
 .comment-submit {
     /*background-color:white*/
 }
@@ -52,6 +58,9 @@
     float: left;
     width:calc(100% - 60px);
     margin-left:10px;
+}
+.comment-h2{
+    margin:10px;
 }
 .comment-time{
     float:right;

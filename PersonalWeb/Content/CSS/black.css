@@ -1,0 +1,22 @@
+﻿body {
+   
+}
+:root{
+    --bgcolor: #2f2f2f;
+    --fontcolor: #AAA;
+    --bordcolor: #888;
+}
+#pageContent .layui-laypage span,
+#pageContent .layui-laypage a,
+#pageContent select,
+.article .article-content li
+{
+    color: var(--fontcolor) !important;
+    background-color:var(--bgcolor) !important;
+}
+.article .article-content li{
+    border:1px solid var(--bordcolor);
+}
+#layui-layedit #LAY_layedit_1{
+    color: var(--fontcolor) !important;
+}

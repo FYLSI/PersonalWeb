@@ -6,19 +6,20 @@
     <title>@ViewBag.Title</title>
     <!--自己的-->
     <link href="~/Content/CSS/base.css" rel="stylesheet" />
-
+    <link href="~/Content/CSS/black.css" rel="stylesheet" />
     <script src="~/Content/jquery-3.2.1/jquery-3.2.1.min.js"></script>
     <link href="~/Content/layui-v2.4.5/layui/css/layui.css" rel="stylesheet" />
     <script src="~/Content/layui-v2.4.5/layui/layui.all.js"></script>
 
     @RenderSection("Head", false)
     <script>
-        var form, layer, layedit, laydate;
-        layui.use(['form', 'layedit', 'laydate', 'layer'], function () {
+        var form, layer, layedit, laydate, laypage;
+        layui.use(['form', 'layedit', 'laydate', 'layer', 'laypage'], function () {
             form = layui.form
                 , layer = layui.layer
                 , layedit = layui.layedit
-                , laydate = layui.laydate;
+                , laydate = layui.laydate
+                , laypage = layui.laypage;
         });
         
     </script>

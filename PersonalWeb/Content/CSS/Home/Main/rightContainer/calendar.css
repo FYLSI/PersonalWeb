@@ -1,7 +1,4 @@
-* { margin: 0; padding: 0; }
-body { font-family: "Microsoft Yahei"; font-size: 12px; color: #888; }
-a, a:hover { color: #888; text-decoration: none; }
-ul, li { list-style: none; }
+
 
 .calendar {
     display: none;

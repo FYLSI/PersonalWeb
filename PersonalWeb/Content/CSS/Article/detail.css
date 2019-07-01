@@ -3,7 +3,7 @@
     width: 65% !important;
 }
 .content{
-    border:1px solid #ffffff;
+    border:1px solid var(--bordcolor);
     padding:20px;
     border-radius:5px;
 }
@@ -22,6 +22,9 @@
     padding-left:10px;
     vertical-align: middle
 }
+#readCount,#commentCount{
+    padding:0 5px;
+}
 .page{
     margin:10px 0;
 }
@@ -29,20 +32,21 @@
     display:block
 }
 #eidtor>div{
-    background-color:var(--bgcolor) !important;
+    /*background-color:var(--bgcolor) !important;*/
 }
 #eidtor>.w-e-toolbar .w-e-menu:hover i{
-    color:#fff !important
+    /*color:#fff !important*/
 }
 .comment-submit {
     /*background-color:white*/
 }
 .comment-submit button {
-    margin-top: 10px
+    margin-top: 10px;
+    float:right;
 }
 .comment-list li{
     padding:20px 0;
-    border-top:1px solid #ffffff
+    border-top:1px solid var(--bordcolor)
 }
 .user-headimg {
     display: inline-block;

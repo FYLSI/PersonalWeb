@@ -10,6 +10,14 @@
     margin-bottom:20px;
     font-size:14px;
 }
+.article .article-content li
+{
+    color: var(--fontcolor) !important;
+    background-color:var(--bgcolor) !important;
+}
+.article .article-content li{
+    border:1px solid var(--bordcolor);
+}
 .article-list-head {
     /*margin-bottom: 10px;*/
 }
@@ -20,6 +28,9 @@
 
 .article-list-foot span{
     padding-right:5px
+}
+#readCount,#commentCount{
+    padding:0 5px;
 }
 #pageContent{
     text-align: center;

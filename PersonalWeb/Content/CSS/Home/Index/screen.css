@@ -1,8 +1,8 @@
 /* ======= DEMO LAYOUT ======= */
 
 body {
-	background-color:#2f2f2f;
-	color:#eeefef;
+	/*background-color:#2f2f2f;*/
+	/*color:#eeefef;*/
 	font-size:62.5%;
 	font-family:Arial, Helvetica, sans-serif;
 	margin:0;
@@ -39,12 +39,12 @@ h3 {
 }
 
 a:link,a:visited {
-	color:#7097af;
+	/*color:#7097af;*/
 	text-decoration:none;
 }
 
 a:hover {
-	color:#7DBADF;
+	/*color:#7DBADF;*/
 }
 
 a img {
@@ -148,12 +148,12 @@ dl.timelineMinor {
 }
 
 		.timelineMinor dt a {
-			color:#999;
+			/*color:#999;*/
 			cursor:pointer;
 		}
 
 		.timelineMinor dt a.closed {
-			color:#999;
+			/*color:#999;*/
 			font-size:1em;
 			margin-left:0;
 		}
@@ -172,7 +172,7 @@ dl.timelineMinor {
 	}
 
 		.timelineMinor dd h3 {
-			color:#FFF;
+			/*color:#FFF;*/
 			clear:both;
 			float:left;
 			font-size:1.5em;

@@ -47,7 +47,7 @@ var particlesOptions = {
                 }
             },
             "line_linked": {
-                "enable": true,
+                "enable": false,
                 "distance": 40,
                 "color": "#ef3b60",
                 "opacity": 1,
@@ -71,7 +71,7 @@ var particlesOptions = {
             "detect_on": "canvas",
             "events": {
                 "onhover": {
-                    "enable": true,
+                    "enable": false,
                     "mode": "grab"
                 },
                 "onclick": {
